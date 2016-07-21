@@ -115,7 +115,10 @@
                        templateUrl: '../admin/partials/queue_message_stats.html',
                        controller: 'AdminQueueMessageStatsCtrl'
                    }
-               }
+               },
+                params: {
+                    'queueName' : {}
+                }
             })
             .state('admin.messagesSettings', {
                url: '/messagesSettings',
